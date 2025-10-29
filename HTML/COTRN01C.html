@@ -1,0 +1,2208 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="COTRN00C.html">
+      
+      
+        <link rel="next" href="COTRN02C.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>COTRN01C - Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="assets/external/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cotrn01c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Documentation" class="md-header__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              COTRN01C
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="CBACT01C.html" class="md-tabs__link">
+          
+  
+  Technical Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Documentation" class="md-nav__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    Project Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="index.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Programs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT04C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT04C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBCUS01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBCUS01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COACTUPC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COACTUPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COACTVWC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COACTVWC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COADM01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COADM01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COBIL00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COBIL00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDLIC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDLIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDSLC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDSLC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDUPC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDUPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMEN01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COMEN01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CORPT00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CORPT00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COSGN00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COSGN00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COTRN00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN01C
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="COTRN01C.html" class="md-nav__link md-nav__link--active">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN01C
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-copybooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenced Copybooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONFIGURATION SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-storage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING-STORAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      LINKAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-para" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAIN-PARA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-enter-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      PROCESS-ENTER-KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-to-prev-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RETURN-TO-PREV-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-trnview-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND-TRNVIEW-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-trnview-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECEIVE-TRNVIEW-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populate-header-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      POPULATE-HEADER-INFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-transact-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      READ-TRANSACT-FILE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-current-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLEAR-CURRENT-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-all-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      INITIALIZE-ALL-FIELDS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ws-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      WS-MESSAGE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COTRN02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CSUTLDTC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CSUTLDTC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="copybooks/CVCRD01Y.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Copybooks
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="jobs/BMSCMP.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Jobs
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-copybooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenced Copybooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONFIGURATION SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-storage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING-STORAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      LINKAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-para" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAIN-PARA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-enter-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      PROCESS-ENTER-KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-to-prev-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RETURN-TO-PREV-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-trnview-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND-TRNVIEW-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-trnview-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECEIVE-TRNVIEW-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populate-header-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      POPULATE-HEADER-INFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-transact-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      READ-TRANSACT-FILE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-current-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLEAR-CURRENT-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-all-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      INITIALIZE-ALL-FIELDS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ws-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      WS-MESSAGE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cotrn01c">COTRN01C</h1>
+<h2 id="overview">Overview</h2>
+<p>This program is part of the CardDemo application and serves as a transaction viewer for the TRANSACT file in a CICS environment. It allows users to view detailed transaction information by entering a transaction ID. The program retrieves the corresponding transaction record from the TRANSACT file and displays various transaction details including card number, transaction type, category, amount, description, timestamps, and merchant information. The interface provides navigation options to return to previous screens (PF3), clear the current screen (PF4), or access the transaction list screen (PF5). Error handling is implemented for cases such as empty transaction ID input or when a transaction record cannot be found.</p>
+<h2 id="metadata">Metadata</h2>
+<p><strong>Program ID</strong>: <code>COTRN01C</code></p>
+<p><strong>Author</strong>: <code>AWS</code></p>
+<h2 id="sequence-diagram">Sequence Diagram</h2>
+<pre class="mermaid"><code>sequenceDiagram
+    actor User
+    participant CICS
+    participant MAIN_PARA as MAIN-PARA
+    participant PROCESS_ENTER as PROCESS-ENTER-KEY
+    participant READ_TRANSACT as READ-TRANSACT-FILE
+    participant SEND_SCREEN as SEND-TRNVIEW-SCREEN
+    participant RECEIVE_SCREEN as RECEIVE-TRNVIEW-SCREEN
+    participant RETURN_SCREEN as RETURN-TO-PREV-SCREEN
+    participant CLEAR_SCREEN as CLEAR-CURRENT-SCREEN
+    participant INIT_FIELDS as INITIALIZE-ALL-FIELDS
+    participant HEADER_INFO as POPULATE-HEADER-INFO
+    participant TRANSACT_FILE as "TRANSACT File"
+
+    User-&gt;&gt;CICS: Start COTRN01C transaction
+    CICS-&gt;&gt;MAIN_PARA: Execute program
+
+    alt First time entry (EIBCALEN = 0)
+        MAIN_PARA-&gt;&gt;RETURN_SCREEN: Return to sign-on screen
+        RETURN_SCREEN-&gt;&gt;CICS: XCTL to COSGN00C
+    else Program has COMMAREA
+        alt Not program re-entry
+            MAIN_PARA-&gt;&gt;MAIN_PARA: Initialize screen
+
+            opt Transaction ID provided from previous screen
+                MAIN_PARA-&gt;&gt;PROCESS_ENTER: Process transaction ID
+                PROCESS_ENTER-&gt;&gt;READ_TRANSACT: Read transaction record
+                READ_TRANSACT-&gt;&gt;TRANSACT_FILE: READ using TRAN-ID
+
+                alt Record found
+                    TRANSACT_FILE--&gt;&gt;READ_TRANSACT: Return transaction data
+                    READ_TRANSACT--&gt;&gt;PROCESS_ENTER: Continue processing
+                    PROCESS_ENTER-&gt;&gt;PROCESS_ENTER: Format transaction data
+                else Record not found
+                    TRANSACT_FILE--&gt;&gt;READ_TRANSACT: NOTFND response
+                    READ_TRANSACT-&gt;&gt;READ_TRANSACT: Set error message
+                else Other error
+                    TRANSACT_FILE--&gt;&gt;READ_TRANSACT: Error response
+                    READ_TRANSACT-&gt;&gt;READ_TRANSACT: Set error message
+                end
+            end
+
+            MAIN_PARA-&gt;&gt;SEND_SCREEN: Display transaction view screen
+            SEND_SCREEN-&gt;&gt;HEADER_INFO: Populate header information
+            HEADER_INFO--&gt;&gt;SEND_SCREEN: Return with header populated
+            SEND_SCREEN-&gt;&gt;CICS: SEND MAP COTRN1A
+            CICS--&gt;&gt;User: Display transaction view screen
+        else Program re-entry
+            MAIN_PARA-&gt;&gt;RECEIVE_SCREEN: Get user input
+            RECEIVE_SCREEN-&gt;&gt;CICS: RECEIVE MAP COTRN1A
+            CICS--&gt;&gt;RECEIVE_SCREEN: Return user input
+
+            alt User pressed ENTER
+                MAIN_PARA-&gt;&gt;PROCESS_ENTER: Process transaction ID
+
+                alt Transaction ID is empty
+                    PROCESS_ENTER-&gt;&gt;PROCESS_ENTER: Set error message
+                    PROCESS_ENTER-&gt;&gt;SEND_SCREEN: Redisplay screen with error
+                else Transaction ID provided
+                    PROCESS_ENTER-&gt;&gt;READ_TRANSACT: Read transaction record
+                    READ_TRANSACT-&gt;&gt;TRANSACT_FILE: READ using TRAN-ID
+
+                    alt Record found
+                        TRANSACT_FILE--&gt;&gt;READ_TRANSACT: Return transaction data
+                        READ_TRANSACT--&gt;&gt;PROCESS_ENTER: Continue processing
+                        PROCESS_ENTER-&gt;&gt;PROCESS_ENTER: Format transaction data
+                    else Record not found
+                        TRANSACT_FILE--&gt;&gt;READ_TRANSACT: NOTFND response
+                        READ_TRANSACT-&gt;&gt;READ_TRANSACT: Set error message
+                    else Other error
+                        TRANSACT_FILE--&gt;&gt;READ_TRANSACT: Error response
+                        READ_TRANSACT-&gt;&gt;READ_TRANSACT: Set error message
+                    end
+
+                    PROCESS_ENTER-&gt;&gt;SEND_SCREEN: Display transaction details
+                end
+
+            else User pressed PF3
+                MAIN_PARA-&gt;&gt;RETURN_SCREEN: Return to previous screen
+                RETURN_SCREEN-&gt;&gt;CICS: XCTL to previous program
+                CICS--&gt;&gt;User: Display previous screen
+            else User pressed PF4
+                MAIN_PARA-&gt;&gt;CLEAR_SCREEN: Clear current screen
+                CLEAR_SCREEN-&gt;&gt;INIT_FIELDS: Initialize all fields
+                INIT_FIELDS--&gt;&gt;CLEAR_SCREEN: Fields initialized
+                CLEAR_SCREEN-&gt;&gt;SEND_SCREEN: Redisplay empty screen
+                SEND_SCREEN-&gt;&gt;CICS: SEND MAP COTRN1A
+                CICS--&gt;&gt;User: Display empty transaction view screen
+            else User pressed PF5
+                MAIN_PARA-&gt;&gt;RETURN_SCREEN: Go to transaction list screen
+                RETURN_SCREEN-&gt;&gt;CICS: XCTL to COTRN00C
+                CICS--&gt;&gt;User: Display transaction list screen
+            else Invalid key
+                MAIN_PARA-&gt;&gt;MAIN_PARA: Set invalid key message
+                MAIN_PARA-&gt;&gt;SEND_SCREEN: Redisplay screen with error
+                SEND_SCREEN-&gt;&gt;CICS: SEND MAP COTRN1A
+                CICS--&gt;&gt;User: Display screen with error message
+            end
+        end
+    end
+
+    MAIN_PARA-&gt;&gt;CICS: RETURN with COMMAREA</code></pre>
+<h2 id="referenced-copybooks">Referenced Copybooks</h2>
+<ul>
+<li><a href="copybooks/CSDAT01Y.html"><code>CSDAT01Y</code></a></li>
+<li><code>DFHAID</code></li>
+<li><a href="copybooks/CVTRA05Y.html"><code>CVTRA05Y</code></a></li>
+<li><a href="copybooks/COCOM01Y.html"><code>COCOM01Y</code></a></li>
+<li><code>COTRN01</code></li>
+<li><code>DFHBMSCA</code></li>
+<li><a href="copybooks/COTTL01Y.html"><code>COTTL01Y</code></a></li>
+<li><a href="copybooks/CSMSG01Y.html"><code>CSMSG01Y</code></a></li>
+</ul>
+<h2 id="environment-division">Environment Division</h2>
+<h3 id="configuration-section">CONFIGURATION SECTION</h3>
+<p>This section would typically contain configuration settings for the COTRN01C transaction viewer program, including file assignments, special names, and system dependencies. In the CardDemo application context, it would define how the program interfaces with the TRANSACT file and CICS environment resources. The configuration section would establish the necessary parameters for the program to properly access and display transaction records within the AWS-showcased mainframe environment.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+</code></pre></div>
+</details>
+
+<h2 id="data-division">Data Division</h2>
+<h3 id="working-storage-section">WORKING-STORAGE SECTION</h3>
+<p>This Working Storage Section defines the key variables and data structures used in the transaction viewer program. It includes program identifiers, error handling flags, and transaction-specific fields like amount and date. The section incorporates several copybooks that likely contain shared data definitions for transaction records (COTRN01), common application data (COCOM01Y), screen layouts (CVTRA05Y), and utility functions for titles (COTTL01Y), dates (CSDAT01Y), and messages (CSMSG01Y). Notable elements include transaction tracking variables in CDEMO-CT01-INFO for managing navigation between multiple transaction records, and standard CICS copybooks (DFHAID, DFHBMSCA) for handling attention identifiers and BMS screen attributes. The structure supports the program's core functionality of retrieving and displaying transaction details in the CICS environment.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">01 WS-</span><span class="nv">VARIABLES</span><span class="p">.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-PGMNAME</span><span class="w">                 </span><span class="kt">PIC X(08)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;COTRN01C&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-TRANID</span><span class="w">                  </span><span class="kt">PIC X(04)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;CT01&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-MESSAGE</span><span class="w">                 </span><span class="kt">PIC X(80)</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">SPACES</span><span class="p">.</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-TRANSACT-FILE</span><span class="w">             </span><span class="kt">PIC X(08)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;TRANSACT&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-ERR-FLG</span><span class="w">                 </span><span class="kt">PIC X(01)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">ERR-FLG-ON</span><span class="w">                         </span><span class="kp">VALUE </span><span class="s1">&#39;Y&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">ERR-FLG-OFF</span><span class="w">                        </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-RESP-CD</span><span class="w">                 </span><span class="kt">PIC S9(09)</span><span class="w"> </span><span class="kt">COMP</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">ZEROS</span><span class="p">.</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-REAS-CD</span><span class="w">                 </span><span class="kt">PIC S9(09)</span><span class="w"> </span><span class="kt">COMP</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">ZEROS</span><span class="p">.</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-USR-MODIFIED</span><span class="w">            </span><span class="kt">PIC X(01)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">USR-MODIFIED-YES</span><span class="w">                   </span><span class="kp">VALUE </span><span class="s1">&#39;Y&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">USR-MODIFIED-NO</span><span class="w">                    </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-TRAN-AMT</span><span class="w">                </span><span class="kt">PIC +99999999.99</span><span class="p">.</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-TRAN-DATE</span><span class="w">               </span><span class="kt">PIC X(08)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;00/00/00&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COCOM01Y</span><span class="p">.</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="c">      </span><span class="w">    </span><span class="mi">05 </span><span class="nv">CDEMO-CT01-INFO</span><span class="p">.</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-TRNID-FIRST</span><span class="w">     </span><span class="kt">PIC X(16)</span><span class="p">.</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-TRNID-LAST</span><span class="w">      </span><span class="kt">PIC X(16)</span><span class="p">.</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-PAGE-NUM</span><span class="w">        </span><span class="kt">PIC 9(08)</span><span class="p">.</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-NEXT-PAGE-FLG</span><span class="w">   </span><span class="kt">PIC X(01)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="c">      </span><span class="w">          </span><span class="mi">88 </span><span class="nv">NEXT-PAGE-YES</span><span class="w">                     </span><span class="kp">VALUE </span><span class="s1">&#39;Y&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="c">      </span><span class="w">          </span><span class="mi">88 </span><span class="nv">NEXT-PAGE-NO</span><span class="w">                      </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-TRN-SEL-FLG</span><span class="w">     </span><span class="kt">PIC X(01)</span><span class="p">.</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="c">      </span><span class="w">       </span><span class="mi">10 </span><span class="nv">CDEMO-CT01-TRN-SELECTED</span><span class="w">    </span><span class="kt">PIC X(16)</span><span class="p">.</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COTRN01</span><span class="p">.</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COTTL01Y</span><span class="p">.</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CSDAT01Y</span><span class="p">.</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CSMSG01Y</span><span class="p">.</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CVTRA05Y</span><span class="p">.</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">DFHAID</span><span class="p">.</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">DFHBMSCA</span><span class="p">.</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="c">      *                        LINKAGE SECTION</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="linkage-section">LINKAGE SECTION</h3>
+<p>This section defines the DFHCOMMAREA structure in the Linkage Section, which is used to receive and pass data between CICS programs. It contains a single field LK-COMMAREA that is defined as a variable-length array of characters with a size that depends on the EIBCALEN value (the length of the passed communication area). This flexible structure allows the program to handle communication areas of different sizes when called by other programs in the CardDemo transaction viewing system.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">01  DF</span><span class="nv">HCOMMAREA</span><span class="p">.</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c">      </span><span class="w">   </span><span class="mi">05  </span><span class="nv">LK-COMMAREA</span><span class="w">                           </span><span class="kt">PIC X(01)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">            </span><span class="w"> </span><span class="kp">OCCURS</span><span class="w"> </span><span class="mi">1 </span><span class="kp">TO</span><span class="w"> </span><span class="mi">32767 </span><span class="kp">TIMES</span><span class="w"> </span><span class="kp">DEPENDING</span><span class="w"> </span><span class="kp">ON</span><span class="w"> </span><span class="nv">EIBCALEN</span><span class="p">.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c">      *</span>
+</code></pre></div>
+</details>
+
+<h2 id="procedure-division">Procedure Division</h2>
+<h3 id="main-para">MAIN-PARA</h3>
+<p>This paragraph serves as the main control flow for the transaction viewer screen. It initializes error flags, processes the COMMAREA data, and handles different user interactions. When first entered, it prepares the screen for display, potentially pre-populating the transaction ID field if one was selected from a previous screen. For subsequent interactions, it evaluates function key inputs to either process an entered transaction ID (Enter key), return to the previous screen (PF3), clear the current screen (PF4), or navigate to the transaction list screen (PF5). The paragraph includes error handling for invalid key presses and ensures proper screen navigation within the application flow. After processing, it returns control to CICS while preserving the application state in the COMMAREA.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c">SET ER</span><span class="nv">R-FLG-OFF</span><span class="w">     </span><span class="kp">TO</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">          </span><span class="w"> </span><span class="kr">SET</span><span class="w"> </span><span class="nv">USR-MODIFIED-NO</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nb">          </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c">      </span><span class="w">                    </span><span class="nv">ERRMSGO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c">      </span><span class="w">     </span><span class="kr">IF</span><span class="w"> </span><span class="nv">EIBCALEN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="mi">               </span><span class="kr">MOVE </span><span class="s1">&#39;COSGN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RETURN-TO-PREV-SCREEN</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c">      </span><span class="w">     </span><span class="kr">ELSE</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="kr">              </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">DFHCOMMAREA</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="nv">EIBCALEN</span><span class="p">)</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CARDDEMO-COMMAREA</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c">      </span><span class="w">         </span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="nv">CDEMO-PGM-REENTER</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c">      </span><span class="w">             </span><span class="kr">SET</span><span class="w"> </span><span class="nv">CDEMO-PGM-REENTER</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nb">                  </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">LOW-VALUES         </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="o">-</span><span class="mi">1       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c">      </span><span class="w">             </span><span class="kr">IF</span><span class="w"> </span><span class="nv">CDEMO-CT01-TRN-SELECTED</span><span class="w"> </span><span class="ow">NOT </span><span class="o">=</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c">      </span><span class="w">                                        </span><span class="no">SPACES</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="no">LOW-VALUES</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="no">                      </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CDEMO-CT01-TRN-SELECTED</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="kp">                           </span><span class="w"> </span><span class="nv">TRNIDINI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c">      </span><span class="w">                 </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">PROCESS-ENTER-KEY</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="c">      </span><span class="w">             </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="kr">                  </span><span class="w"> </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="c">      </span><span class="w">         </span><span class="kr">ELSE</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="kr">                  </span><span class="w"> </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RECEIVE-TRNVIEW-SCREEN</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="c">      </span><span class="w">             </span><span class="kr">EVALUATE</span><span class="w"> </span><span class="nv">EIBAID</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHENTER</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">PROCESS-ENTER-KEY</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHPF3</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="c">      </span><span class="w">                     </span><span class="kr">IF</span><span class="w"> </span><span class="nv">CDEMO-FROM-PROGRAM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">SPACES</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="no">LOW-VALUES</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="no">                              </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;COMEN01C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="c">      </span><span class="w">                     </span><span class="kr">ELSE</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="kr">                              </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CDEMO-FROM-PROGRAM</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="kp">                              </span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="c">      </span><span class="w">                     </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="kr">                          </span><span class="w"> </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RETURN-TO-PREV-SCREEN</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHPF4</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">CLEAR-CURRENT-SCREEN</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHPF5</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="c">      </span><span class="w">                     </span><span class="kr">MOVE </span><span class="s1">&#39;COTRN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RETURN-TO-PREV-SCREEN</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="kp">OTHER</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="kp">                          </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">                       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="c">      </span><span class="w">                     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-MSG-INVALID-KEY</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="c">      </span><span class="w">             </span><span class="kr">END-EVALUATE</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="kr">              </span><span class="w"> </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="kr">          </span><span class="w"> </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="kr">          </span><span class="w"> </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span><span class="w"> </span><span class="kr">RETURN</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="kr">                    </span><span class="w"> </span><span class="nv">TRANSID</span><span class="w"> </span><span class="p">(</span><span class="nv">WS-TRANID</span><span class="p">)</span>
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="c">      </span><span class="w">               </span><span class="nv">COMMAREA</span><span class="w"> </span><span class="p">(</span><span class="nv">CARDDEMO-COMMAREA</span><span class="p">)</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="c">      *                      PROCESS-ENTER-KEY</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="process-enter-key">PROCESS-ENTER-KEY</h3>
+<p>This paragraph handles the processing logic when a user presses the Enter key in the transaction viewer screen. It first validates if the transaction ID input field is empty, displaying an error message if so. If the input is valid, it clears all display fields, reads the transaction record using the entered ID, and then populates the screen with the retrieved transaction details including card number, transaction type, category, amount, description, timestamps, and merchant information. The paragraph formats the transaction amount for display and ensures the updated screen is sent back to the user. If any errors occur during processing (such as record not found), the error flag would prevent the display fields from being populated.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">EVALUA</span><span class="nv">TE</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">              </span><span class="w"> </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">TRNIDINI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">SPACES</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="no">LOW-VALUES</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="no">                  </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">     </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE </span><span class="s1">&#39;Tran ID can NOT be empty...&#39;</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kp">                                  </span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="o">-</span><span class="mi">1       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c">      </span><span class="w">             </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c">      </span><span class="w">         </span><span class="kp">WHEN</span><span class="w"> </span><span class="kp">OTHER</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kp">                  </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="o">-</span><span class="mi">1       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c">      </span><span class="w">             </span><span class="kr">CONTINUE</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="kr">          </span><span class="w"> </span><span class="kr">END-EVALUATE</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="kr">          </span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="nv">ERR-FLG-ON</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES     </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c">      </span><span class="w">                             </span><span class="nv">CARDNUMI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TTYPCDI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TCATCDI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TRNSRCI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TRNAMTI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TDESCI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TORIGDTI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TPROCDTI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MIDI</span><span class="w">     </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MNAMEI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MCITYI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MZIPI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRNIDINI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRAN-ID</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">READ-TRANSACT-FILE</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span><span class="p">.</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="c">      </span><span class="w">     </span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="nv">ERR-FLG-ON</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-AMT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-TRAN-AMT</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-ID</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-CARD-NUM</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CARDNUMI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-TYPE-CD</span><span class="w">        </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TTYPCDI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-CAT-CD</span><span class="w">        </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TCATCDI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-SOURCE</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNSRCI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-TRAN-AMT</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNAMTI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-DESC</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TDESCI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-ORIG-TS</span><span class="w">        </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TORIGDTI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-PROC-TS</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TPROCDTI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-MERCHANT-ID</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">MIDI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-MERCHANT-NAME</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">MNAMEI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-MERCHANT-CITY</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">MCITYI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">TRAN-MERCHANT-ZIP</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">MZIPI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span><span class="p">.</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="c">      *                      RETURN-TO-PREV-SCREEN</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="return-to-prev-screen">RETURN-TO-PREV-SCREEN</h3>
+<p>This paragraph handles the return navigation functionality when a user wants to exit the current transaction viewer screen. It first checks if the target program is specified in the communication area, and if not, defaults to 'COSGN00C' (likely the main menu or sign-on screen). It then prepares the communication area by setting the originating transaction ID and program name, and resets the program context to zeros. Finally, it transfers control to the target program using the CICS XCTL command, passing the communication area to maintain session context. This ensures proper navigation flow within the CardDemo application.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c">IF CDE</span><span class="nv">MO-TO-PROGRAM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">LOW-VALUES</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="no">SPACES</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="no">              </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;COSGN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kr">          </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-TRANID</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-FROM-TRANID</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-PGMNAME</span><span class="w">   </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-FROM-PROGRAM</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">ZEROS       </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-PGM-CONTEXT</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c">      </span><span class="w">     </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c">      </span><span class="w">         </span><span class="nv">XCTL</span><span class="w"> </span><span class="kp">PROGRAM</span><span class="p">(</span><span class="nv">CDEMO-TO-PROGRAM</span><span class="p">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c">      </span><span class="w">         </span><span class="nv">COMMAREA</span><span class="p">(</span><span class="nv">CARDDEMO-COMMAREA</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="c">      *                      SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="send-trnview-screen">SEND-TRNVIEW-SCREEN</h3>
+<p>This paragraph handles the display of the transaction viewer screen. It first calls the POPULATE-HEADER-INFO paragraph to set up the header information, then moves any system message to the error message field on the screen. It then uses the CICS SEND command to display the COTRN1A map from the COTRN01 mapset, clearing the screen (ERASE) and positioning the cursor. This is a standard screen display routine that presents the transaction details to the user after the data has been retrieved and formatted.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c">PERFOR</span><span class="nv">M</span><span class="w"> </span><span class="nv">POPULATE-HEADER-INFO</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-MESSAGE</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">ERRMSGO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c">      </span><span class="w">     </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span><span class="w"> </span><span class="err">SEND</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="err">                    </span><span class="w"> </span><span class="nv">MAP</span><span class="p">(</span><span class="s1">&#39;COTRN1A&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c">      </span><span class="w">               </span><span class="nv">MAPSET</span><span class="p">(</span><span class="s1">&#39;COTRN01&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c">      </span><span class="w">               </span><span class="kp">FROM</span><span class="p">(</span><span class="nv">COTRN1AO</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c">      </span><span class="w">               </span><span class="kp">ERASE</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="kp">                    </span><span class="w"> </span><span class="kp">CURSOR</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="kp">          </span><span class="w"> </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c">      *                      RECEIVE-TRNVIEW-SCREEN</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="receive-trnview-screen">RECEIVE-TRNVIEW-SCREEN</h3>
+<p>This paragraph handles the reception of user input from the COTRN1A map within the COTRN01 mapset in the transaction viewer. It uses the CICS RECEIVE command to capture data entered by the user on the transaction view screen, storing the input in the COTRN1AI structure. The paragraph also captures response codes in WS-RESP-CD and WS-REAS-CD variables for subsequent error handling. This is a standard CICS input processing step that occurs before the application processes the user's transaction viewing request.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c">EXEC C</span><span class="nv">ICS</span><span class="w"> </span><span class="err">RECEIVE</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">                    </span><span class="w"> </span><span class="nv">MAP</span><span class="p">(</span><span class="s1">&#39;COTRN1A&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c">      </span><span class="w">               </span><span class="nv">MAPSET</span><span class="p">(</span><span class="s1">&#39;COTRN01&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c">      </span><span class="w">               </span><span class="kp">INTO</span><span class="p">(</span><span class="nv">COTRN1AI</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c">      </span><span class="w">               </span><span class="nv">RESP</span><span class="p">(</span><span class="nv">WS-RESP-CD</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c">      </span><span class="w">               </span><span class="nv">RESP2</span><span class="p">(</span><span class="nv">WS-REAS-CD</span><span class="p">)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c">      *                      POPULATE-HEADER-INFO</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="populate-header-info">POPULATE-HEADER-INFO</h3>
+<p>This paragraph populates the header information for the transaction viewer screen. It retrieves the current system date and time using the CURRENT-DATE function, then formats and displays this information along with application titles, transaction ID, and program name on the screen. The date is formatted as MM/DD/YY and the time as HH:MM:SS before being moved to their respective output fields on the COTRN1AO screen.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c">MOVE F</span><span class="nv">UNCTION</span><span class="w"> </span><span class="nf">CURRENT-DATE </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-DATA</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-TITLE01</span><span class="w">           </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TITLE01O</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-TITLE02</span><span class="w">           </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TITLE02O</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-TRANID</span><span class="w">              </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNNAMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-PGMNAME</span><span class="w">             </span><span class="kp">TO</span><span class="w"> </span><span class="nv">PGMNAMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-MONTH</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-MM</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-DAY</span><span class="w">         </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-DD</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-YEAR</span><span class="p">(</span><span class="mi">3</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span><span class="w">   </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-YY</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-MM-DD-YY</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CURDATEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-HOURS</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-HH</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-MINUTE</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-MM</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-SECOND</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-SS</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-HH-MM-SS</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CURTIMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AO</span><span class="p">.</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="c">      *                      READ-TRANSACT-FILE</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="read-transact-file">READ-TRANSACT-FILE</h3>
+<p>This paragraph performs a CICS READ operation to retrieve a transaction record from the TRANSACT file using the transaction ID as the key. It handles three possible response scenarios: 1) When the read is successful (NORMAL), processing continues to the next step; 2) When the transaction ID is not found (NOTFND), it sets an error flag, displays a "Transaction ID NOT found" message, positions the cursor at the transaction ID input field, and redisplays the transaction view screen; 3) For any other response code, it logs the response and reason codes, sets an error flag, displays an "Unable to lookup Transaction" message, positions the cursor at the transaction ID input field, and redisplays the screen. The paragraph is essential for retrieving transaction details requested by the user in the CardDemo transaction viewer application.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c">EXEC C</span><span class="nv">ICS</span><span class="w"> </span><span class="kr">READ</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kr">               </span><span class="w"> </span><span class="nv">DATASET</span><span class="w">   </span><span class="p">(</span><span class="nv">WS-TRANSACT-FILE</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c">      </span><span class="w">          </span><span class="kp">INTO      </span><span class="p">(</span><span class="nv">TRAN-RECORD</span><span class="p">)</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c">      </span><span class="w">          </span><span class="kp">LENGTH    </span><span class="p">(</span><span class="kp">LENGTH</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">TRAN-RECORD</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c">      </span><span class="w">          </span><span class="nv">RIDFLD</span><span class="w">    </span><span class="p">(</span><span class="nv">TRAN-ID</span><span class="p">)</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c">      </span><span class="w">          </span><span class="nv">KEYLENGTH</span><span class="w"> </span><span class="p">(</span><span class="kp">LENGTH</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">TRAN-ID</span><span class="p">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c">      </span><span class="w">          </span><span class="kp">UPDATE</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="kp">               </span><span class="w"> </span><span class="nv">RESP</span><span class="w">      </span><span class="p">(</span><span class="nv">WS-RESP-CD</span><span class="p">)</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c">      </span><span class="w">          </span><span class="nv">RESP2</span><span class="w">     </span><span class="p">(</span><span class="nv">WS-REAS-CD</span><span class="p">)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c">      </span><span class="w">     </span><span class="kr">EVALUATE</span><span class="w"> </span><span class="nv">WS-RESP-CD</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c">      </span><span class="w">         </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHRESP</span><span class="p">(</span><span class="err">NORMAL</span><span class="p">)</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c">      </span><span class="w">             </span><span class="kr">CONTINUE</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="kr">              </span><span class="w"> </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHRESP</span><span class="p">(</span><span class="nv">NOTFND</span><span class="p">)</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">     </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE </span><span class="s1">&#39;Transaction ID NOT found...&#39;</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="kp">                                  </span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="o">-</span><span class="mi">1       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="c">      </span><span class="w">             </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c">      </span><span class="w">         </span><span class="kp">WHEN</span><span class="w"> </span><span class="kp">OTHER</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="kp">                  </span><span class="w"> </span><span class="kr">DISPLAY </span><span class="s1">&#39;RESP:&#39;</span><span class="w"> </span><span class="nv">WS-RESP-CD</span><span class="w"> </span><span class="s1">&#39;REAS:&#39;</span><span class="w"> </span><span class="nv">WS-REAS-CD</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">     </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE </span><span class="s1">&#39;Unable to lookup Transaction...&#39;</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="kp">                                  </span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="o">-</span><span class="mi">1       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="c">      </span><span class="w">             </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-EVALUATE</span><span class="p">.</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="c">      *                      CLEAR-CURRENT-SCREEN</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="clear-current-screen">CLEAR-CURRENT-SCREEN</h3>
+<p>This paragraph clears the current screen by first initializing all fields to their default values and then redisplaying the transaction viewer screen. It provides a way for users to reset the form when they press the designated clear key (PF4).</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c">PERFOR</span><span class="nv">M</span><span class="w"> </span><span class="nv">INITIALIZE-ALL-FIELDS</span><span class="p">.</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c">      </span><span class="w">     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-TRNVIEW-SCREEN</span><span class="p">.</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c">      *                      INITIALIZE-ALL-FIELDS</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="initialize-all-fields">INITIALIZE-ALL-FIELDS</h3>
+<p>This paragraph initializes all fields in the transaction viewer screen. It sets the cursor position to the transaction ID input field by setting its length attribute to -1, and then clears all display fields by moving spaces to them. The fields being cleared include transaction details (ID, card number, type code, category code, source, amount, description, original date, processing date) and merchant information (ID, name, city, ZIP code). This initialization is typically performed when the screen is first displayed or when preparing for new input.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c">MOVE -</span><span class="mi">1              </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINL</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES         </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNIDINI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TRNIDI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c">      </span><span class="w">                             </span><span class="nv">CARDNUMI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TTYPCDI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TCATCDI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TRNSRCI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TRNAMTI</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TDESCI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TORIGDTI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="c">      </span><span class="w">                             </span><span class="nv">TPROCDTI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MIDI</span><span class="w">     </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MNAMEI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MCITYI</span><span class="w">   </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="c">      </span><span class="w">                             </span><span class="nv">MZIPI</span><span class="w">    </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COTRN1AI</span>
+</code></pre></div>
+</details>
+
+<h3 id="ws-message">WS-MESSAGE</h3>
+<p>This paragraph contains version control information for the CardDemo application, showing the specific version (v1.0-15-g27d6c6f-68) and the timestamp when this code was last updated (July 19, 2022 at 23:12:34 CDT). This information helps track which version of the code is deployed and when changes were made.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">*</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c">      * Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:34 CDT</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c">      *</span>
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.prune"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="assets/external/unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

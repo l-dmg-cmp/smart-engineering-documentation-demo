@@ -1,0 +1,909 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="CBACT01C.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Architecture - Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="assets/external/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#high-level-architecture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Documentation" class="md-header__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Architecture
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="CBACT01C.html" class="md-tabs__link">
+          
+  
+  Technical Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Documentation" class="md-nav__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    Project Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="architecture.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-Level Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Constraints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="CBACT01C.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-Level Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Constraints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Architecture</h1>
+
+<h2 id="high-level-architecture">High-Level Architecture</h2>
+<p>The CardDemo application is a traditional mainframe application designed to showcase AWS and partner technologies for mainframe migration and modernization. It follows a classic layered architecture typical of mainframe systems, with clear separation between online (CICS) and batch processing components. The system implements a transaction-oriented design pattern with centralized data access through VSAM files.</p>
+<h3 id="core-components">Core Components</h3>
+<ul>
+<li><strong>User Interface Layer</strong>: </li>
+<li>Sign-on and Menu Systems: COSGN00C (sign-on handler), COMEN01C (regular user menu), COADM01C (admin menu)</li>
+<li>
+<p>Screen-based interfaces for various business functions with standardized navigation patterns</p>
+</li>
+<li>
+<p><strong>Business Logic Layer</strong>:</p>
+</li>
+<li>Account Management: COACTVWC (view accounts), COACTUPC (update accounts)</li>
+<li>Card Management: COCRDLIC (list cards), COCRDSLC (view card details), COCRDUPC (update card details)</li>
+<li>Transaction Management: COTRN00C (list transactions), COTRN01C (view transactions), COTRN02C (add transactions)</li>
+<li>Bill Payment: COBIL00C (online bill payment)</li>
+<li>
+<p>Report Generation: CORPT00C (report submission interface)</p>
+</li>
+<li>
+<p><strong>User Administration Module</strong>:</p>
+</li>
+<li>User Management: COUSR00C (list users), COUSR01C (add users), COUSR02C (update users), COUSR03C (delete users)</li>
+<li>
+<p>Role-based access control (admin vs. regular users)</p>
+</li>
+<li>
+<p><strong>Batch Processing Layer</strong>:</p>
+</li>
+<li>Account Processing: CBACT01C, CBACT02C, CBACT03C, CBACT04C (interest calculation)</li>
+<li>Transaction Processing: CBTRN01C (transaction validation), CBTRN02C (transaction posting), CBTRN03C (transaction reporting)</li>
+<li>
+<p>Customer Data Processing: CBCUS01C</p>
+</li>
+<li>
+<p><strong>Utility Services</strong>:</p>
+</li>
+<li>Date Validation: CSUTLDTC (leverages IBM Language Environment for date validation)</li>
+</ul>
+<h3 id="component-relationships">Component Relationships</h3>
+<ul>
+<li><strong>Data Flow</strong>:</li>
+<li>Users authenticate through COSGN00C</li>
+<li>Based on user type, they are directed to either COMEN01C (regular) or COADM01C (admin)</li>
+<li>Users navigate to specific business functions through menu options</li>
+<li>Business logic components interact with data files and return results to the user interface</li>
+<li>
+<p>Batch processes run independently to process transactions, calculate interest, and generate reports</p>
+</li>
+<li>
+<p><strong>Communication Patterns</strong>:</p>
+</li>
+<li>Online components use CICS COMMAREA for state management between screens</li>
+<li>Programs transfer control to each other using CICS XCTL commands</li>
+<li>Batch job submission from online components via transient data queues (TDQ)</li>
+<li>
+<p>Standardized error handling and status code processing across components</p>
+</li>
+<li>
+<p><strong>Dependencies</strong>:</p>
+</li>
+<li>Menu systems (COMEN01C, COADM01C) depend on authentication from COSGN00C</li>
+<li>Transaction viewing (COTRN01C) depends on transaction listing (COTRN00C)</li>
+<li>Card detail screens (COCRDSLC, COCRDUPC) depend on card listing (COCRDLIC)</li>
+<li>User management functions (COUSR02C, COUSR03C) depend on user listing (COUSR00C)</li>
+<li>Report generation (CORPT00C) submits batch jobs that depend on transaction data</li>
+</ul>
+<h3 id="external-dependencies">External Dependencies</h3>
+<ul>
+<li><strong>Data Storage</strong>:</li>
+<li>
+<p>VSAM Files:</p>
+<ul>
+<li>CUSTDAT/CUSTFILE: Customer information</li>
+<li>ACCTDAT/ACCTFILE: Account information</li>
+<li>CARDDAT/CARDFILE: Credit card information</li>
+<li>TRANSACT: Transaction records</li>
+<li>USRSEC: User security profiles</li>
+<li>CXACAIX/XREFFILE: Cross-reference data for accounts and cards</li>
+<li>Transaction type and category reference files</li>
+</ul>
+</li>
+<li>
+<p><strong>Runtime Environment</strong>:</p>
+</li>
+<li>CICS Transaction Server for online components</li>
+<li>Batch processing environment for scheduled and on-demand jobs</li>
+<li>
+<p>IBM Language Environment (for date validation via CEEDAYS API)</p>
+</li>
+<li>
+<p><strong>Integration Points</strong>:</p>
+</li>
+<li>Internal reader for job submission (via "JOBS" TDQ)</li>
+<li>Potential integration with external payment systems (implied by COBIL00C)</li>
+</ul>
+<h3 id="technical-constraints">Technical Constraints</h3>
+<ul>
+<li><strong>Platform Requirements</strong>:</li>
+<li>Traditional mainframe environment (likely z/OS)</li>
+<li>COBOL programming language</li>
+<li>CICS for online transaction processing</li>
+<li>VSAM for data storage</li>
+<li>
+<p>JCL for batch job control</p>
+</li>
+<li>
+<p><strong>Performance Considerations</strong>:</p>
+</li>
+<li>Pagination implemented for large data sets (COTRN00C, COUSR00C, COCRDLIC)</li>
+<li>Optimized file access patterns with indexed VSAM files</li>
+<li>
+<p>Batch processing for resource-intensive operations</p>
+</li>
+<li>
+<p><strong>Security Requirements</strong>:</p>
+</li>
+<li>Role-based access control (admin vs. regular users)</li>
+<li>User authentication through sign-on process</li>
+<li>
+<p>Function-level authorization (preventing regular users from accessing admin functions)</p>
+</li>
+<li>
+<p><strong>Scalability Considerations</strong>:</p>
+</li>
+<li>Batch processing for high-volume operations</li>
+<li>Separation of online and batch components to manage system load</li>
+<li>Transaction-oriented design for consistent processing</li>
+</ul>
+<p>The CardDemo application represents a comprehensive demonstration of typical mainframe financial application patterns, with clear separation of concerns between user interface, business logic, and data access components. Its modular design facilitates the showcasing of various migration and modernization approaches when moving to AWS environments.</p>
+<h2 id="architecture-diagram">Architecture Diagram</h2>
+<pre class="mermaid"><code>C4Context
+    title System Context diagram for CardDemo AWS Mainframe Application
+
+    Person(admin, "Administrator", "System administrator with full access")
+    Person(user, "Regular User", "Customer with limited access")
+
+    System_Boundary(cardDemo, "CardDemo Application") {
+        System(authSystem, "Authentication System", "User authentication and access control")
+        System(accountSystem, "Account Management", "Handles account data and operations")
+        System(cardSystem, "Card Management", "Manages credit card information")
+        System(transactionSystem, "Transaction Processing", "Processes and manages transactions")
+        System(reportingSystem, "Reporting System", "Generates reports and analytics")
+        System(adminSystem, "Administration System", "User and system administration")
+    }
+
+    SystemDb(mainframeDb, "Mainframe Database", "VSAM files storing customer, account, card, and transaction data")
+
+    System_Ext(batchSystem, "Batch Processing System", "Handles scheduled batch operations")
+
+    Rel(user, authSystem, "Authenticates via")
+    Rel(admin, authSystem, "Authenticates via")
+
+    Rel(authSystem, adminSystem, "Routes admin users to")
+    Rel(authSystem, accountSystem, "Routes regular users to")
+
+    Rel(accountSystem, mainframeDb, "Reads/writes account data")
+    Rel(cardSystem, mainframeDb, "Reads/writes card data")
+    Rel(transactionSystem, mainframeDb, "Reads/writes transaction data")
+    Rel(adminSystem, mainframeDb, "Manages user data")
+
+    Rel(accountSystem, cardSystem, "References")
+    Rel(cardSystem, transactionSystem, "Triggers")
+
+    Rel(admin, adminSystem, "Manages users and system")
+    Rel(user, accountSystem, "Views/updates accounts")
+    Rel(user, cardSystem, "Views/manages cards")
+    Rel(user, transactionSystem, "Views/creates transactions")
+
+    Rel(reportingSystem, mainframeDb, "Generates reports from")
+    Rel(user, reportingSystem, "Requests reports from")
+    Rel(admin, reportingSystem, "Requests reports from")
+
+    Rel(batchSystem, transactionSystem, "Processes daily transactions")
+    Rel(batchSystem, accountSystem, "Updates account balances")
+    Rel(batchSystem, reportingSystem, "Generates scheduled reports")</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.prune"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="assets/external/unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

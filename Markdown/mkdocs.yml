@@ -1,0 +1,229 @@
+site_name: Project Documentation
+site_url: ''
+repo_url: null
+repo_name: null
+theme:
+  name: material
+  logo: logo.svg
+  palette:
+    primary: custom
+  features:
+  - navigation.tabs
+  - navigation.top
+  - navigation.prune
+plugins:
+- search
+- offline
+- privacy
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+validation:
+  links:
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
+extra_css:
+- extra.css
+nav:
+- Overview:
+  - Overview: index.md
+  - Architecture: architecture.md
+- Technical Documentation:
+  - Programs:
+    - CBACT01C: CBACT01C.md
+    - CBACT02C: CBACT02C.md
+    - CBACT03C: CBACT03C.md
+    - CBACT04C: CBACT04C.md
+    - CBCUS01C: CBCUS01C.md
+    - CBTRN01C: CBTRN01C.md
+    - CBTRN02C: CBTRN02C.md
+    - CBTRN03C: CBTRN03C.md
+    - COACTUPC: COACTUPC.md
+    - COACTVWC: COACTVWC.md
+    - COADM01C: COADM01C.md
+    - COBIL00C: COBIL00C.md
+    - COCRDLIC: COCRDLIC.md
+    - COCRDSLC: COCRDSLC.md
+    - COCRDUPC: COCRDUPC.md
+    - COMEN01C: COMEN01C.md
+    - CORPT00C: CORPT00C.md
+    - COSGN00C: COSGN00C.md
+    - COTRN00C: COTRN00C.md
+    - COTRN01C: COTRN01C.md
+    - COTRN02C: COTRN02C.md
+    - COUSR00C: COUSR00C.md
+    - COUSR01C: COUSR01C.md
+    - COUSR02C: COUSR02C.md
+    - COUSR03C: COUSR03C.md
+    - CSUTLDTC: CSUTLDTC.md
+  - Copybooks:
+    - CVCRD01Y: copybooks/CVCRD01Y.md
+    - CSMSG02Y: copybooks/CSMSG02Y.md
+    - CSMSG01Y: copybooks/CSMSG01Y.md
+    - CSUSR01Y: copybooks/CSUSR01Y.md
+    - CSLKPCDY: copybooks/CSLKPCDY.md
+    - CVACT03Y: copybooks/CVACT03Y.md
+    - CSSETATY: copybooks/CSSETATY.md
+    - CVTRA06Y: copybooks/CVTRA06Y.md
+    - CVTRA05Y: copybooks/CVTRA05Y.md
+    - COMEN02Y: copybooks/COMEN02Y.md
+    - CVTRA02Y: copybooks/CVTRA02Y.md
+    - CSUTLDPY: copybooks/CSUTLDPY.md
+    - CUSTREC: copybooks/CUSTREC.md
+    - CVTRA01Y: copybooks/CVTRA01Y.md
+    - CSUTLDWY: copybooks/CSUTLDWY.md
+    - CVTRA07Y: copybooks/CVTRA07Y.md
+    - CSSTRPFY: copybooks/CSSTRPFY.md
+    - CVTRA04Y: copybooks/CVTRA04Y.md
+    - COTTL01Y: copybooks/COTTL01Y.md
+    - UNUSED1Y: copybooks/UNUSED1Y.md
+    - COADM02Y: copybooks/COADM02Y.md
+    - COCOM01Y: copybooks/COCOM01Y.md
+    - CVACT02Y: copybooks/CVACT02Y.md
+    - CVCUS01Y: copybooks/CVCUS01Y.md
+    - CVTRA03Y: copybooks/CVTRA03Y.md
+    - CSDAT01Y: copybooks/CSDAT01Y.md
+    - CVACT01Y: copybooks/CVACT01Y.md
+  - Jobs:
+    - BMSCMP: jobs/BMSCMP.md
+    - BATCMP: jobs/BATCMP.md
+    - CICCMP: jobs/CICCMP.md
+    - DUSRSECJ: jobs/DUSRSECJ.md
+    - READXREF: jobs/READXREF.md
+    - XREFFILE: jobs/XREFFILE.md
+    - TRANTYPE: jobs/TRANTYPE.md
+    - READCUST: jobs/READCUST.md
+    - DALYREJS: jobs/DALYREJS.md
+    - TRANBKP: jobs/TRANBKP.md
+    - CARDFILE: jobs/CARDFILE.md
+    - READCARD: jobs/READCARD.md
+    - TRANIDX: jobs/TRANIDX.md
+    - DEFCUST: jobs/DEFCUST.md
+    - COMBTRAN: jobs/COMBTRAN.md
+    - OPENFIL: jobs/OPENFIL.md
+    - TCATBALF: jobs/TCATBALF.md
+    - TRANFILE: jobs/TRANFILE.md
+    - DEFGDGB: jobs/DEFGDGB.md
+    - CUSTFILE: jobs/CUSTFILE.md
+    - TRANREPT: jobs/TRANREPT.md
+    - REPTFILE: jobs/REPTFILE.md
+    - TRANCATG: jobs/TRANCATG.md
+    - INTCALC: jobs/INTCALC.md
+    - DISCGRP: jobs/DISCGRP.md
+    - READACCT: jobs/READACCT.md
+    - PRTCATBL: jobs/PRTCATBL.md
+    - POSTTRAN: jobs/POSTTRAN.md
+    - CLOSEFIL: jobs/CLOSEFIL.md
+    - ACCTFILE: jobs/ACCTFILE.md
+    - CBADMCDJ: jobs/CBADMCDJ.md
+- Backlog:
+  - Epics:
+    - Customer Data Management Infrastructure: backlog/epics/Customer Data Management
+        Infrastructure.md
+    - CardDemo Main Menu Interface and Navigation System: backlog/epics/CardDemo Main
+        Menu Interface and Navigation System.md
+    - VSAM File Access and Status Reporting Infrastructure: backlog/epics/VSAM File
+        Access and Status Reporting Infrastructure.md
+    - Transaction Reporting System Enhancement: backlog/epics/Transaction Reporting
+        System Enhancement.md
+    - Online Credit Card Bill Payment System: backlog/epics/Online Credit Card Bill
+        Payment System.md
+    - Comprehensive Transaction Management System: backlog/epics/Comprehensive Transaction
+        Management System.md
+    - Account Management System Enhancement: backlog/epics/Account Management System
+        Enhancement.md
+    - User Authentication and Security Management System: backlog/epics/User Authentication
+        and Security Management System.md
+    - Credit Card Management System Enhancement: backlog/epics/Credit Card Management
+        System Enhancement.md
+    - Credit Card Transaction Processing System Enhancement: backlog/epics/Credit
+        Card Transaction Processing System Enhancement.md
+    - Administrative System Management Interface: backlog/epics/Administrative System
+        Management Interface.md
+    - Date Validation Framework for Data Quality Management: backlog/epics/Date Validation
+        Framework for Data Quality Management.md
+  - User Stories:
+    - Customer Data Report Generation: backlog/user_stories/Customer Data Report Generation.md
+    - VSAM Customer Data Access Infrastructure: backlog/user_stories/VSAM Customer
+        Data Access Infrastructure.md
+    - Main Menu Navigation for Regular Users: backlog/user_stories/Main Menu Navigation
+        for Regular Users.md
+    - Main Menu Interface Display: backlog/user_stories/Main Menu Interface Display.md
+    - Session Management for CardDemo Application: backlog/user_stories/Session Management
+        for CardDemo Application.md
+    - Sequential Card Data File Reading for Reporting: backlog/user_stories/Sequential
+        Card Data File Reading for Reporting.md
+    - Standardized File Status Reporting for VSAM Operations: backlog/user_stories/Standardized
+        File Status Reporting for VSAM Operations.md
+    - Transaction Report Generation and Management: backlog/user_stories/Transaction
+        Report Generation and Management.md
+    - Transaction Report Date Range Configuration: backlog/user_stories/Transaction
+        Report Date Range Configuration.md
+    - Transaction Reporting Navigation System: backlog/user_stories/Transaction Reporting
+        Navigation System.md
+    - Online Credit Card Bill Payment: backlog/user_stories/Online Credit Card Bill
+        Payment.md
+    - Bill Payment Screen Interface Management: backlog/user_stories/Bill Payment
+        Screen Interface Management.md
+    - Bill Payment Transaction Recording: backlog/user_stories/Bill Payment Transaction
+        Recording.md
+    - Credit Card Transaction Entry: backlog/user_stories/Credit Card Transaction
+        Entry.md
+    - Transaction List Navigation and Display: backlog/user_stories/Transaction List
+        Navigation and Display.md
+    - View Transaction Details: backlog/user_stories/View Transaction Details.md
+    - Consistent Application Navigation Framework: backlog/user_stories/Consistent
+        Application Navigation Framework.md
+    - Transaction Report Formatting and Display: backlog/user_stories/Transaction
+        Report Formatting and Display.md
+    - Transaction Data Presentation Interface: backlog/user_stories/Transaction Data
+        Presentation Interface.md
+    - View Account Information: backlog/user_stories/View Account Information.md
+    - Account Search Validation and Processing: backlog/user_stories/Account Search
+        Validation and Processing.md
+    - Standardized File Operation Error Handling for Account Data Access: backlog/user_stories/Standardized
+        File Operation Error Handling for Account Data Access.md
+    - Monthly Credit Card Interest Calculation: backlog/user_stories/Monthly Credit
+        Card Interest Calculation.md
+    - Account Balance Update with Interest Charges: backlog/user_stories/Account Balance
+        Update with Interest Charges.md
+    - Automated Interest Transaction Recording: backlog/user_stories/Automated Interest
+        Transaction Recording.md
+    - Account Information Management: backlog/user_stories/Account Information Management.md
+    - Customer Information Update: backlog/user_stories/Customer Information Update.md
+    - Account Data Field-Level Validation: backlog/user_stories/Account Data Field-Level
+        Validation.md
+    - Secure User Authentication and Session Management: backlog/user_stories/Secure
+        User Authentication and Session Management.md
+    - Sign-on Screen Display and Navigation: backlog/user_stories/Sign-on Screen Display
+        and Navigation.md
+    - User Registration System: backlog/user_stories/User Registration System.md
+    - Security Administration Interface for User Management: backlog/user_stories/Security
+        Administration Interface for User Management.md
+    - Administrative Screen Navigation: backlog/user_stories/Administrative Screen
+        Navigation.md
+    - Administrative Interface Navigation: backlog/user_stories/Administrative Interface
+        Navigation.md
+    - Credit Card Portfolio Management: backlog/user_stories/Credit Card Portfolio
+        Management.md
+    - Credit Card Search Functionality: backlog/user_stories/Credit Card Search Functionality.md
+    - View Credit Card Details: backlog/user_stories/View Credit Card Details.md
+    - Credit Card Screen Navigation: backlog/user_stories/Credit Card Screen Navigation.md
+    - Credit Card Transaction Batch Processing: backlog/user_stories/Credit Card Transaction
+        Batch Processing.md
+    - Implement Robust File System Management for Transaction Processing: backlog/user_stories/Implement
+        Robust File System Management for Transaction Processing.md
+    - Administrative Menu Display: backlog/user_stories/Administrative Menu Display.md
+    - Administrative Menu Navigation: backlog/user_stories/Administrative Menu Navigation.md
+    - Administrative Session Management: backlog/user_stories/Administrative Session
+        Management.md
+    - Date Format Validation for Data Quality Management: backlog/user_stories/Date
+        Format Validation for Data Quality Management.md

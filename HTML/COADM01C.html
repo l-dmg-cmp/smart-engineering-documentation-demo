@@ -1,0 +1,2023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="COACTVWC.html">
+      
+      
+        <link rel="next" href="COBIL00C.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>COADM01C - Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="assets/external/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#coadm01c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Documentation" class="md-header__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              COADM01C
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="CBACT01C.html" class="md-tabs__link">
+          
+  
+  Technical Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-tabs__link">
+          
+  
+  Backlog
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Documentation" class="md-nav__button md-logo" aria-label="Project Documentation" data-md-component="logo">
+      
+  <img src="logo.svg" alt="logo">
+
+    </a>
+    Project Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="index.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Programs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBACT04C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBACT04C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBCUS01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBCUS01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CBTRN03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CBTRN03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COACTUPC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COACTUPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COACTVWC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COACTVWC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COADM01C
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="COADM01C.html" class="md-nav__link md-nav__link--active">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COADM01C
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-copybooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenced Copybooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONFIGURATION SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-storage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING-STORAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      LINKAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-para" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAIN-PARA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-enter-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      PROCESS-ENTER-KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-to-signon-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RETURN-TO-SIGNON-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-menu-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND-MENU-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-menu-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECEIVE-MENU-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populate-header-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      POPULATE-HEADER-INFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-menu-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      BUILD-MENU-OPTIONS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COBIL00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COBIL00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDLIC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDLIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDSLC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDSLC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COCRDUPC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COCRDUPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMEN01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COMEN01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CORPT00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CORPT00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COSGN00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COSGN00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COTRN00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COTRN01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COTRN02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COTRN02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR00C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR00C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR01C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR01C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR02C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR02C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COUSR03C.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    COUSR03C
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CSUTLDTC.html" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    CSUTLDTC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="copybooks/CVCRD01Y.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Copybooks
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="jobs/BMSCMP.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Jobs
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="backlog/epics/Customer%20Data%20Management%20Infrastructure.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-copybooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenced Copybooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONFIGURATION SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-storage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      WORKING-STORAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkage-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      LINKAGE SECTION
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-para" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAIN-PARA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-enter-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      PROCESS-ENTER-KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-to-signon-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RETURN-TO-SIGNON-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-menu-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND-MENU-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-menu-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECEIVE-MENU-SCREEN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populate-header-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      POPULATE-HEADER-INFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-menu-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      BUILD-MENU-OPTIONS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="coadm01c">COADM01C</h1>
+<h2 id="overview">Overview</h2>
+<p>This program serves as the administrative menu interface for the CardDemo application, providing a centralized access point for administrative functions. It displays a menu of options available to admin users and handles navigation to the selected administrative functions. The program manages user input validation, ensuring only valid menu options are processed, and provides appropriate error messages for invalid selections. It maintains session context through a commarea and includes navigation capabilities to return to the sign-on screen. The interface displays current date and time information in the header along with program and transaction identifiers, creating a complete administrative console experience for authorized users.</p>
+<h2 id="metadata">Metadata</h2>
+<p><strong>Program ID</strong>: <code>COADM01C</code></p>
+<p><strong>Author</strong>: <code>AWS</code></p>
+<h2 id="sequence-diagram">Sequence Diagram</h2>
+<pre class="mermaid"><code>sequenceDiagram
+    actor User
+    participant CICS as CICS System
+    participant COADM01C as Admin Menu Program
+    participant SignOn as Sign-on Program
+    participant AdminOpt as Admin Option Program
+
+    User-&gt;&gt;CICS: Start transaction
+    CICS-&gt;&gt;COADM01C: Execute COADM01C
+
+    Note over COADM01C: MAIN-PARA
+
+    alt No COMMAREA (First Entry)
+        COADM01C-&gt;&gt;SignOn: Return to sign-on screen
+    else Has COMMAREA
+        alt First time entry
+            COADM01C-&gt;&gt;COADM01C: POPULATE-HEADER-INFO
+            COADM01C-&gt;&gt;COADM01C: BUILD-MENU-OPTIONS
+            COADM01C-&gt;&gt;User: SEND-MENU-SCREEN
+        else Subsequent interaction
+            COADM01C-&gt;&gt;User: RECEIVE-MENU-SCREEN
+
+            alt ENTER key pressed
+                COADM01C-&gt;&gt;COADM01C: PROCESS-ENTER-KEY
+
+                alt Invalid option
+                    COADM01C-&gt;&gt;User: Display error message
+                else Valid option
+                    alt Option implemented
+                        COADM01C-&gt;&gt;AdminOpt: Transfer control (XCTL)
+                    else Option not implemented
+                        COADM01C-&gt;&gt;User: Display "coming soon" message
+                    end
+                end
+
+            else PF3 key pressed
+                COADM01C-&gt;&gt;SignOn: RETURN-TO-SIGNON-SCREEN
+            else Other key pressed
+                COADM01C-&gt;&gt;User: Display invalid key message
+            end
+        end
+    end
+
+    COADM01C-&gt;&gt;CICS: Return with COMMAREA</code></pre>
+<h2 id="referenced-copybooks">Referenced Copybooks</h2>
+<ul>
+<li><a href="copybooks/CSDAT01Y.html"><code>CSDAT01Y</code></a></li>
+<li><code>DFHAID</code></li>
+<li><a href="copybooks/COCOM01Y.html"><code>COCOM01Y</code></a></li>
+<li><a href="copybooks/CSUSR01Y.html"><code>CSUSR01Y</code></a></li>
+<li><code>DFHBMSCA</code></li>
+<li><a href="copybooks/COTTL01Y.html"><code>COTTL01Y</code></a></li>
+<li><a href="copybooks/COADM02Y.html"><code>COADM02Y</code></a></li>
+<li><a href="copybooks/CSMSG01Y.html"><code>CSMSG01Y</code></a></li>
+<li><code>COADM01</code></li>
+</ul>
+<h2 id="environment-division">Environment Division</h2>
+<h3 id="configuration-section">CONFIGURATION SECTION</h3>
+<p>This environment section appears to be empty or not provided in the snippet. In a complete COBOL program, the CONFIGURATION SECTION would typically contain specifications for special names, file assignments, and other environmental settings needed for the CardDemo administrative menu interface program (COADM01C). This section would normally define how the program interacts with the system environment, including any special device assignments or system-specific configurations required for the administrative functions.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+</code></pre></div>
+</details>
+
+<h2 id="data-division">Data Division</h2>
+<h3 id="working-storage-section">WORKING-STORAGE SECTION</h3>
+<p>This data section defines the working storage variables for the administrative menu program COADM01C. It includes program identification variables (program name and transaction ID), message handling fields, file references for user security, error flags with condition names, response codes, and menu option processing variables. The section incorporates several copybooks that likely contain common data structures, screen layouts, date/time formatting, message handling, user information, and standard CICS definitions. These variables support the program's function as an administrative interface, providing storage for menu selection processing, error handling, and display formatting needed to present and navigate the administrative console.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">01 WS-</span><span class="nv">VARIABLES</span><span class="p">.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-PGMNAME</span><span class="w">                 </span><span class="kt">PIC X(08)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;COADM01C&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-TRANID</span><span class="w">                  </span><span class="kt">PIC X(04)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;CA00&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-MESSAGE</span><span class="w">                 </span><span class="kt">PIC X(80)</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">SPACES</span><span class="p">.</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-USRSEC-FILE</span><span class="w">             </span><span class="kt">PIC X(08)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;USRSEC  &#39;</span><span class="p">.</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-ERR-FLG</span><span class="w">                 </span><span class="kt">PIC X(01)</span><span class="w"> </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">ERR-FLG-ON</span><span class="w">                         </span><span class="kp">VALUE </span><span class="s1">&#39;Y&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c">      </span><span class="w">     </span><span class="mi">88 </span><span class="nv">ERR-FLG-OFF</span><span class="w">                        </span><span class="kp">VALUE </span><span class="s1">&#39;N&#39;</span><span class="p">.</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-RESP-CD</span><span class="w">                 </span><span class="kt">PIC S9(09)</span><span class="w"> </span><span class="kt">COMP</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">ZEROS</span><span class="p">.</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-REAS-CD</span><span class="w">                 </span><span class="kt">PIC S9(09)</span><span class="w"> </span><span class="kt">COMP</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">ZEROS</span><span class="p">.</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-OPTION-X</span><span class="w">                </span><span class="kt">PIC X(02)</span><span class="w"> </span><span class="kp">JUST</span><span class="w"> </span><span class="kp">RIGHT</span><span class="p">.</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-OPTION</span><span class="w">                  </span><span class="kt">PIC 9(02)</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-IDX</span><span class="w">                     </span><span class="kt">PIC S9(04)</span><span class="w"> </span><span class="kt">COMP</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">ZEROS</span><span class="p">.</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c">      </span><span class="w">   </span><span class="mi">05 </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w">           </span><span class="kt">PIC X(40)</span><span class="w"> </span><span class="kp">VALUE</span><span class="w"> </span><span class="no">SPACES</span><span class="p">.</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COCOM01Y</span><span class="p">.</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COADM02Y</span><span class="p">.</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COADM01</span><span class="p">.</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">COTTL01Y</span><span class="p">.</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CSDAT01Y</span><span class="p">.</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CSMSG01Y</span><span class="p">.</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">CSUSR01Y</span><span class="p">.</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">DFHAID</span><span class="p">.</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="c">      </span><span class="w"> </span><span class="kp">COPY</span><span class="w"> </span><span class="nv">DFHBMSCA</span><span class="p">.</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="c">      *                        LINKAGE SECTION</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="linkage-section">LINKAGE SECTION</h3>
+<p>This section defines the linkage area for communication with other programs. It uses the standard DFHCOMMAREA structure with a variable-length field (LK-COMMAREA) that can expand from 1 to 32,767 bytes depending on the actual communication area length (EIBCALEN). This flexible structure allows the program to receive and pass data of different sizes when interacting with other components of the CardDemo administrative system.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">01  DF</span><span class="nv">HCOMMAREA</span><span class="p">.</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c">      </span><span class="w">   </span><span class="mi">05  </span><span class="nv">LK-COMMAREA</span><span class="w">                           </span><span class="kt">PIC X(01)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">            </span><span class="w"> </span><span class="kp">OCCURS</span><span class="w"> </span><span class="mi">1 </span><span class="kp">TO</span><span class="w"> </span><span class="mi">32767 </span><span class="kp">TIMES</span><span class="w"> </span><span class="kp">DEPENDING</span><span class="w"> </span><span class="kp">ON</span><span class="w"> </span><span class="nv">EIBCALEN</span><span class="p">.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c">      *</span>
+</code></pre></div>
+</details>
+
+<h2 id="procedure-division">Procedure Division</h2>
+<h3 id="main-para">MAIN-PARA</h3>
+<p>This paragraph serves as the main control flow for the administrative menu interface. It first clears any error flags and message fields, then checks if the program was called with a communication area. If not, it returns to the sign-on screen. Otherwise, it processes the existing communication area and either displays the menu for first-time entry or handles user input for subsequent interactions. The paragraph evaluates function key inputs, specifically processing ENTER key actions, returning to the sign-on screen when PF3 is pressed, or displaying an error message for invalid keys. After processing, it returns control to CICS with the transaction ID and updated communication area, maintaining the program's state between interactions.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c">SET ER</span><span class="nv">R-FLG-OFF</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">          </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c">      </span><span class="w">                    </span><span class="nv">ERRMSGO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c">      </span><span class="w">     </span><span class="kr">IF</span><span class="w"> </span><span class="nv">EIBCALEN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="mi">               </span><span class="kr">MOVE </span><span class="s1">&#39;COSGN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-FROM-PROGRAM</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RETURN-TO-SIGNON-SCREEN</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c">      </span><span class="w">     </span><span class="kr">ELSE</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kr">              </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">DFHCOMMAREA</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="nv">EIBCALEN</span><span class="p">)</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CARDDEMO-COMMAREA</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c">      </span><span class="w">         </span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="nv">CDEMO-PGM-REENTER</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c">      </span><span class="w">             </span><span class="kr">SET</span><span class="w"> </span><span class="nv">CDEMO-PGM-REENTER</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nb">TRUE</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nb">                  </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">LOW-VALUES         </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c">      </span><span class="w">             </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-MENU-SCREEN</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c">      </span><span class="w">         </span><span class="kr">ELSE</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="kr">                  </span><span class="w"> </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RECEIVE-MENU-SCREEN</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c">      </span><span class="w">             </span><span class="kr">EVALUATE</span><span class="w"> </span><span class="nv">EIBAID</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHENTER</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">PROCESS-ENTER-KEY</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="nv">DFHPF3</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="c">      </span><span class="w">                     </span><span class="kr">MOVE </span><span class="s1">&#39;COSGN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">RETURN-TO-SIGNON-SCREEN</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="c">      </span><span class="w">                 </span><span class="kp">WHEN</span><span class="w"> </span><span class="kp">OTHER</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="kp">                          </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">                       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="c">      </span><span class="w">                     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-MSG-INVALID-KEY</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="c">      </span><span class="w">                     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-MENU-SCREEN</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="c">      </span><span class="w">             </span><span class="kr">END-EVALUATE</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="kr">              </span><span class="w"> </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="kr">          </span><span class="w"> </span><span class="kr">END-IF</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="kr">          </span><span class="w"> </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span><span class="w"> </span><span class="kr">RETURN</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="kr">                    </span><span class="w"> </span><span class="nv">TRANSID</span><span class="w"> </span><span class="p">(</span><span class="nv">WS-TRANID</span><span class="p">)</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="c">      </span><span class="w">               </span><span class="nv">COMMAREA</span><span class="w"> </span><span class="p">(</span><span class="nv">CARDDEMO-COMMAREA</span><span class="p">)</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="c">      *                      PROCESS-ENTER-KEY</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="process-enter-key">PROCESS-ENTER-KEY</h3>
+<p>This paragraph processes the user's menu selection when the Enter key is pressed in the CardDemo administrative interface. It first trims trailing spaces from the input option and converts it to a numeric value, handling any blank input by replacing spaces with zeros. The code validates that the option is numeric, within the valid range of menu options, and not zero. If validation fails, it sets an error flag and displays an appropriate message. For valid selections, the code checks if the target program is available (not marked as "DUMMY") and if so, transfers control to that program while passing the commarea to maintain session context. If the selected option is not yet implemented (has a "DUMMY" program name), it displays a "coming soon" message to the user. The paragraph maintains user interface consistency by redisplaying the menu screen with appropriate status messages after processing.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">PERFOR</span><span class="nv">M</span><span class="w"> </span><span class="kp">VARYING</span><span class="w"> </span><span class="nv">WS-IDX</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c">      </span><span class="w">             </span><span class="kp">FROM</span><span class="w"> </span><span class="kp">LENGTH</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">OPTIONI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AI</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="o">-</span><span class="mi">1 </span><span class="kp">UNTIL</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kp">                  </span><span class="w"> </span><span class="nv">OPTIONI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AI</span><span class="p">(</span><span class="nv">WS-IDX</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="ow">NOT </span><span class="o">=</span><span class="w"> </span><span class="no">SPACES</span><span class="w"> </span><span class="ow">OR</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="ow">                  </span><span class="w"> </span><span class="nv">WS-IDX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="mi">           </span><span class="kr">END-PERFORM</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kr">          </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">OPTIONI</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AI</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="nv">WS-IDX</span><span class="p">)</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-OPTION-X</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c">      </span><span class="w">     </span><span class="kr">INSPECT</span><span class="w"> </span><span class="nv">WS-OPTION-X</span><span class="w"> </span><span class="kp">REPLACING</span><span class="w"> </span><span class="kp">ALL </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="kp">BY </span><span class="s1">&#39;0&#39;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-OPTION-X</span><span class="w">              </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-OPTION</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-OPTION</span><span class="w">                </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTIONO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c">      </span><span class="w">     </span><span class="kr">IF</span><span class="w"> </span><span class="nv">WS-OPTION</span><span class="w"> </span><span class="kp">IS</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="kp">NUMERIC</span><span class="w"> </span><span class="ow">OR</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="ow">             </span><span class="w"> </span><span class="nv">WS-OPTION</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nv">CDEMO-ADMIN-OPT-COUNT</span><span class="w"> </span><span class="ow">OR</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="ow">             </span><span class="w"> </span><span class="nv">WS-OPTION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">ZEROS</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="no">              </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;Y&#39;</span><span class="w">     </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ERR-FLG</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE </span><span class="s1">&#39;Please enter a valid option number...&#39;</span><span class="w"> </span><span class="kp">TO</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="kp">                                      </span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-MENU-SCREEN</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="kr">          </span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="nv">ERR-FLG-ON</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c">      </span><span class="w">         </span><span class="kr">IF</span><span class="w"> </span><span class="nv">CDEMO-ADMIN-OPT-PGMNAME</span><span class="p">(</span><span class="nv">WS-OPTION</span><span class="p">)(</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="ow">NOT </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;DUMMY&#39;</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-TRANID</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-FROM-TRANID</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-PGMNAME</span><span class="w">   </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-FROM-PROGRAM</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="c">      </span><span class="w">             </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">ZEROS       </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-PGM-CONTEXT</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="c">      </span><span class="w">             </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="c">      </span><span class="w">                 </span><span class="nv">XCTL</span><span class="w"> </span><span class="kp">PROGRAM</span><span class="p">(</span><span class="nv">CDEMO-ADMIN-OPT-PGMNAME</span><span class="p">(</span><span class="nv">WS-OPTION</span><span class="p">))</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="c">      </span><span class="w">                 </span><span class="nv">COMMAREA</span><span class="p">(</span><span class="nv">CARDDEMO-COMMAREA</span><span class="p">)</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="c">      </span><span class="w">             </span><span class="nv">END-EXEC</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="c">      </span><span class="w">         </span><span class="kr">END-IF</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="kr">              </span><span class="w"> </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES            </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">DFHGREEN</span><span class="w">           </span><span class="kp">TO</span><span class="w"> </span><span class="nv">ERRMSGC</span><span class="w">  </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="c">      </span><span class="w">         </span><span class="kr">STRING </span><span class="s1">&#39;This option &#39;</span><span class="w">       </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="kp">      </span><span class="o">*</span><span class="w">                </span><span class="nv">CDEMO-ADMIN-OPT-NAME</span><span class="p">(</span><span class="nv">WS-OPTION</span><span class="p">)</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="c">      *                                DELIMITED BY SIZE</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="c">      </span><span class="w">                 </span><span class="s1">&#39;is coming soon ...&#39;</span><span class="w">   </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="kp">                 </span><span class="w"> </span><span class="kp">INTO</span><span class="w"> </span><span class="nv">WS-MESSAGE</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="c">      </span><span class="w">         </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">SEND-MENU-SCREEN</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span><span class="p">.</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="c">      *                      RETURN-TO-SIGNON-SCREEN</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="return-to-signon-screen">RETURN-TO-SIGNON-SCREEN</h3>
+<p>This paragraph handles the return navigation to the sign-on screen from the administrative menu. It first checks if the target program variable (CDEMO-TO-PROGRAM) is empty or contains spaces, and if so, sets it to the sign-on program 'COSGN00C' as the default destination. It then executes a CICS XCTL command to transfer control to the specified program, effectively ending the current program's execution and transferring control to the sign-on screen or another designated program. This ensures users can properly exit the administrative functions and return to the application's entry point.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c">IF CDE</span><span class="nv">MO-TO-PROGRAM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">LOW-VALUES</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="no">SPACES</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="no">              </span><span class="w"> </span><span class="kr">MOVE </span><span class="s1">&#39;COSGN00C&#39;</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CDEMO-TO-PROGRAM</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c">      </span><span class="w">     </span><span class="kr">END-IF</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kr">          </span><span class="w"> </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c">      </span><span class="w">         </span><span class="nv">XCTL</span><span class="w"> </span><span class="kp">PROGRAM</span><span class="p">(</span><span class="nv">CDEMO-TO-PROGRAM</span><span class="p">)</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c">      *                      SEND-MENU-SCREEN</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="send-menu-screen">SEND-MENU-SCREEN</h3>
+<p>This paragraph handles the display of the administrative menu screen. It first calls two supporting paragraphs to populate the header information and build the menu options. It then transfers any system messages to the output map's error message field. Finally, it uses the CICS SEND command to display the COADM1A map from the COADM01 mapset, using the COADM1AO data structure as the source of the display data, and clears the screen before displaying the new content.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c">PERFOR</span><span class="nv">M</span><span class="w"> </span><span class="nv">POPULATE-HEADER-INFO</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c">      </span><span class="w">     </span><span class="kr">PERFORM</span><span class="w"> </span><span class="nv">BUILD-MENU-OPTIONS</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-MESSAGE</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">ERRMSGO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c">      </span><span class="w">     </span><span class="nv">EXEC</span><span class="w"> </span><span class="nv">CICS</span><span class="w"> </span><span class="err">SEND</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="err">                    </span><span class="w"> </span><span class="nv">MAP</span><span class="p">(</span><span class="s1">&#39;COADM1A&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c">      </span><span class="w">               </span><span class="nv">MAPSET</span><span class="p">(</span><span class="s1">&#39;COADM01&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c">      </span><span class="w">               </span><span class="kp">FROM</span><span class="p">(</span><span class="nv">COADM1AO</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c">      </span><span class="w">               </span><span class="kp">ERASE</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="kp">          </span><span class="w"> </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c">      *                      RECEIVE-MENU-SCREEN</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="receive-menu-screen">RECEIVE-MENU-SCREEN</h3>
+<p>This paragraph handles the reception of user input from the administrative menu screen. It uses the CICS RECEIVE command to capture data entered by the user on the 'COADM1A' map within the 'COADM01' mapset, storing the input in the COADM1AI structure. The operation's response codes are captured in WS-RESP-CD and WS-REAS-CD variables for subsequent error handling. This is a standard input processing step that occurs after displaying the menu and before processing the user's selection.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c">EXEC C</span><span class="nv">ICS</span><span class="w"> </span><span class="err">RECEIVE</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">                    </span><span class="w"> </span><span class="nv">MAP</span><span class="p">(</span><span class="s1">&#39;COADM1A&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c">      </span><span class="w">               </span><span class="nv">MAPSET</span><span class="p">(</span><span class="s1">&#39;COADM01&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c">      </span><span class="w">               </span><span class="kp">INTO</span><span class="p">(</span><span class="nv">COADM1AI</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c">      </span><span class="w">               </span><span class="nv">RESP</span><span class="p">(</span><span class="nv">WS-RESP-CD</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c">      </span><span class="w">               </span><span class="nv">RESP2</span><span class="p">(</span><span class="nv">WS-REAS-CD</span><span class="p">)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c">      </span><span class="w">     </span><span class="nv">END-EXEC</span><span class="p">.</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c">      *                      POPULATE-HEADER-INFO</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="populate-header-info">POPULATE-HEADER-INFO</h3>
+<p>This paragraph populates the header information for the administrative menu screen. It retrieves the current system date and time using the CURRENT-DATE function, then formats and displays this information on the screen. The paragraph sets the title fields, transaction ID, and program name in the output map (COADM1AO). It also formats the current date into MM/DD/YY format and the current time into HH:MM:SS format before placing these values in their respective output fields. This creates a consistent header that provides context to the user about when they're accessing the system and which program they're currently using.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c">MOVE F</span><span class="nv">UNCTION</span><span class="w"> </span><span class="nf">CURRENT-DATE </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-DATA</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-TITLE01</span><span class="w">           </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TITLE01O</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">CCDA-TITLE02</span><span class="w">           </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TITLE02O</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-TRANID</span><span class="w">              </span><span class="kp">TO</span><span class="w"> </span><span class="nv">TRNNAMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-PGMNAME</span><span class="w">             </span><span class="kp">TO</span><span class="w"> </span><span class="nv">PGMNAMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-MONTH</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-MM</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-DAY</span><span class="w">         </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-DD</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-YEAR</span><span class="p">(</span><span class="mi">3</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span><span class="w">   </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURDATE-YY</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURDATE-MM-DD-YY</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CURDATEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-HOURS</span><span class="w">       </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-HH</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-MINUTE</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-MM</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-SECOND</span><span class="w">      </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-CURTIME-SS</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="c">      </span><span class="w">     </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-CURTIME-HH-MM-SS</span><span class="w">    </span><span class="kp">TO</span><span class="w"> </span><span class="nv">CURTIMEO</span><span class="w"> </span><span class="kp">OF</span><span class="w"> </span><span class="nv">COADM1AO</span><span class="p">.</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="c">      *----------------------------------------------------------------*</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="c">      *                      BUILD-MENU-OPTIONS</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="c">      *----------------------------------------------------------------*</span>
+</code></pre></div>
+</details>
+
+<h3 id="build-menu-options">BUILD-MENU-OPTIONS</h3>
+<p>This paragraph constructs and populates the administrative menu options displayed to users. It iterates through available admin options (up to the count stored in CDEMO-ADMIN-OPT-COUNT), formatting each option by combining its number and name into a formatted string with proper delimiters. The formatted text for each option is then assigned to the appropriate screen field (OPTN001O through OPTN010O) based on its position in the menu. The paragraph supports up to 10 menu options, with any additional options being ignored. This dynamic menu construction allows the administrative interface to display a variable number of options without requiring code changes when menu items are added or removed.</p>
+<details><summary>Code</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c">PERFOR</span><span class="nv">M</span><span class="w"> </span><span class="kp">VARYING</span><span class="w"> </span><span class="nv">WS-IDX</span><span class="w"> </span><span class="kp">FROM</span><span class="w"> </span><span class="mi">1 </span><span class="kp">BY</span><span class="w"> </span><span class="mi">1 </span><span class="kp">UNTIL</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kp">                          </span><span class="w"> </span><span class="nv">WS-IDX</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nv">CDEMO-ADMIN-OPT-COUNT</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c">      </span><span class="w">         </span><span class="kr">MOVE</span><span class="w"> </span><span class="no">SPACES            </span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c">      </span><span class="w">         </span><span class="kr">STRING</span><span class="w"> </span><span class="nv">CDEMO-ADMIN-OPT-NUM</span><span class="p">(</span><span class="nv">WS-IDX</span><span class="p">)</span><span class="w">  </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="kp">                      </span><span class="s1">&#39;. &#39;</span><span class="w">                         </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="kp">                     </span><span class="w"> </span><span class="nv">CDEMO-ADMIN-OPT-NAME</span><span class="p">(</span><span class="nv">WS-IDX</span><span class="p">)</span><span class="w"> </span><span class="kp">DELIMITED</span><span class="w"> </span><span class="kp">BY</span><span class="w"> </span><span class="kp">SIZE</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="kp">                </span><span class="w"> </span><span class="kp">INTO</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c">      </span><span class="w">         </span><span class="kr">EVALUATE</span><span class="w"> </span><span class="nv">WS-IDX</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN001O</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">2</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN002O</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">3</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN003O</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">4</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN004O</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN005O</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">6</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN006O</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">7</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN007O</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">8</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN008O</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">9</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN009O</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="mi">10</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="mi">                       </span><span class="kr">MOVE</span><span class="w"> </span><span class="nv">WS-ADMIN-OPT-TXT</span><span class="w"> </span><span class="kp">TO</span><span class="w"> </span><span class="nv">OPTN010O</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="c">      </span><span class="w">             </span><span class="kp">WHEN</span><span class="w"> </span><span class="kp">OTHER</span>
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="kp">                      </span><span class="w"> </span><span class="kr">CONTINUE</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="kr">              </span><span class="w"> </span><span class="kr">END-EVALUATE</span>
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="kr">          </span><span class="w"> </span><span class="kr">END-PERFORM</span><span class="p">.</span>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a><span class="c">      *</span>
+<a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a><span class="c">      * Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:32 CDT</span>
+<a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a><span class="c">      *</span>
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.prune"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="assets/external/unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

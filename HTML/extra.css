@@ -1,0 +1,14 @@
+
+.md-footer {
+    display: none;
+}
+
+:root  > * {
+  --md-primary-fg-color:        rgb(0, 85, 170);
+  --md-primary-fg-color--light: rgb(0, 85, 170);
+  --md-primary-fg-color--dark:  rgb(0, 85, 170);
+}
+
+#__mermaid_0[aria-roledescription="error"] {
+    display: none;
+}
